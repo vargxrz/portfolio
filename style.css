@@ -303,12 +303,7 @@ button {
 }
 
 .icons img {
-  transition: 1s;
   width: 100px;
-}
-
-.icons img:hover {
-  transform: scale(1.15);
 }
 
 @media (max-width: 780px) {
@@ -386,6 +381,6 @@ button {
     transition-duration: 1s;
 }
 
-    .main-title  h1:hover {
+.main-title  h1:hover {
         letter-spacing: 8px;
-  }
+}
