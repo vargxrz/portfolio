@@ -373,15 +373,16 @@ button {
     width: 40vh;
   }
 
-  .main-title h1:hover {
-    display: none;
-  }
-
 }
+
+@media (min-width: 781px) {
+
 .main-title h1{
     transition-duration: 1s;
 }
 
 .main-title  h1:hover {
         letter-spacing: 8px;
+}
+
 }
