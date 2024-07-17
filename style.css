@@ -201,7 +201,6 @@
   }
 
   .escrita-about {
-    width: 900px;
     display: flex;
     text-align: left;
     flex-direction: column;
@@ -210,13 +209,24 @@
   }
 
   .escrita-about h1 {
-    font-size: 52px;
+    font-size: 62px;
+    text-align: center;
   }
 
   .escrita-about p {
-    font-size: 28px;
+    font-size: 42px;
+    width: 800px;
+    text-align: center;
   }
 
+  #imgVargas {
+    transition: 0.5s;
+  }
+
+  #imgVargas:hover {
+    transform: scale(1.1);
+  }
+ 
   .container {
     width: 100%;
     align-items: center;
@@ -227,7 +237,7 @@
   }
 
   .skills h2, .projects h2 {
-    font-size: 48px;
+    font-size: 68px;
     margin-bottom: 30px;
   }
 
@@ -237,6 +247,7 @@
 
   .skill-name {
     font-weight: bold;
+    font-size: 26px;
   }
 
   .bar {
@@ -258,7 +269,7 @@
     margin: 10px 0;
     color: #000;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 32px;
   }
 
   .projects a:hover {
@@ -292,6 +303,7 @@
 
 .icons img {
     transition: 1s;
+    width: 100px;
 }
 
   .icons img:hover {
