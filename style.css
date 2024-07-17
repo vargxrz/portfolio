@@ -67,9 +67,10 @@
   .options-home a {
     text-decoration: none;
     color: black;
+    position: relative;
   }
 
-  .options-home > p::after {
+  .options-home > a > p::after {
     content: '';
     display: block;
     position: absolute;
@@ -81,7 +82,7 @@
     transition: 200ms ease-in-out;
   }
 
-  .options-home > p:hover::after {
+  .options-home > a > p:hover::after {
     width: 100%;
   }
 
@@ -287,4 +288,12 @@
     justify-content: space-between;
     align-items: center;
     width: 40vh;
+}
+
+.icons img {
+    transition: 1s;
+}
+
+  .icons img:hover {
+    transform: scale(1.15);
   }
