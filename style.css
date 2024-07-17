@@ -356,7 +356,6 @@ button {
     width: 300px;
     text-align: center;
     font-size: 22px;
-    word-break: keep-all;
   }
   .icons > a > img {
     width: 70px;
@@ -381,4 +380,12 @@ button {
   .icons {
     width: 40vh;
   }
+
 }
+.main-title h1{
+    transition-duration: 1s;
+}
+
+    .main-title  h1:hover {
+        letter-spacing: 8px;
+  }
