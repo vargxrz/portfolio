@@ -382,3 +382,10 @@ button {
   }
 
 }
+.main-title h1{
+    transition-duration: 1s;
+}
+
+    .main-title  h1:hover {
+        letter-spacing: 8px;
+  }
