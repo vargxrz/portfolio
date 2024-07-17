@@ -297,3 +297,57 @@
   .icons img:hover {
     transform: scale(1.15);
   }
+
+  @media (max-width: 780px) {
+
+    .main-title h1{
+        font-size: 60px !important;
+    }
+    .main-title p {
+        font-size: 16px !important;
+    }
+    .buttons-home button {
+        width: 60% !important;
+        padding-inline: 22px;
+        font-size: 16px !important;
+    }
+    .buttons-home {
+        flex-direction: column;
+    }
+    #readmore-button {
+        display: none;
+    }
+    .header-home {
+        width: 100vw;
+    }
+    .header-home a > p {
+        font-size: 14px;
+    }
+    .header-home img {
+        width: 116px;       
+        padding-left: 15px; 
+    }
+    .options-home {
+        padding-right: 15px;
+        gap: 12px;
+    }
+
+    #imgVargas {
+        display: none;
+    }
+
+    .escrita-about {
+        align-items: center;
+        justify-content: center
+
+    }
+    .escrita-about p {
+        width: 300px;
+        text-align: center;
+        font-size: 22px;
+        word-break: keep-all;
+    }
+    .icons > a > img {
+        width: 70px;
+    }
+}
