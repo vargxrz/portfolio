@@ -373,6 +373,10 @@ button {
     width: 40vh;
   }
 
+  .main-title h1:hover {
+    display: none;
+  }
+
 }
 .main-title h1{
     transition-duration: 1s;
