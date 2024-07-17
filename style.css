@@ -1,365 +1,381 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat";
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
 
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  html{
-    scroll-behavior: smooth;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
 
-  .header-home {
-    display: flex;
-    max-width: 1400px;
-    width: 300vh;
-    align-items: center;
-    justify-content: space-between;
-    height: 120px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  .header-home img  {
-    width: 190px;
-  }
+.header-home {
+  display: flex;
+  max-width: 1400px;
+  width: 300vh;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
+.header-home img {
+  width: 190px;
+}
 
-  .logo-text {
-    margin-left: 10px;
-  }
+.logo-container {
+  display: flex;
+  align-items: center;
+}
 
-  .logo-text p {
-    margin: 0;
-    line-height: 1.2;
-  }
+.logo-text {
+  margin-left: 10px;
+}
 
-  .options-home {
-    display: flex;
-    font-size: 24px;
-    gap: 102px;
-    font-family: "Montserrat";
-  }
+.logo-text p {
+  margin: 0;
+  line-height: 1.2;
+}
 
-  .options-home > p {
-    position: relative;
-    cursor: pointer;
-  }
+.options-home {
+  display: flex;
+  font-size: 24px;
+  gap: 102px;
+  font-family: "Montserrat";
+}
 
-  .options-home a {
-    text-decoration: none;
-    color: black;
-    position: relative;
-  }
+.options-home > p {
+  position: relative;
+  cursor: pointer;
+}
 
-  .options-home > a > p::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: black;
-    bottom: 0;
-    left: 0;
-    transition: 200ms ease-in-out;
-  }
+.options-home a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
 
-  .options-home > a > p:hover::after {
-    width: 100%;
-  }
+.options-home > a > p::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transition: 200ms ease-in-out;
+}
 
-  section {
-    max-width: 1400px;
-    width: 90%;
-    position: relative;
-  }
+.options-home > a > p:hover::after {
+  width: 100%;
+}
 
-  #home {
-    height: calc(100vh - 120px);
-    display: flex;
-    align-items: center;
-  }
+section {
+  max-width: 1400px;
+  width: 90%;
+  position: relative;
+}
 
-  #home p {
-    font-size: 28px;
-    font-family: "Montserrat";
-    color: #787878;
-  }
+#home {
+  height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
 
-  #home h1 {
-    font-size: 128px;
-    font-family: "Space Grotesk";
-    line-height: 100%;
-  }
+#home p {
+  font-size: 28px;
+  font-family: "Montserrat";
+  color: #787878;
+}
 
-  .main-title {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
+#home h1 {
+  font-size: 128px;
+  font-family: "Space Grotesk";
+  line-height: 100%;
+}
 
+.main-title {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.buttons-home {
+  padding-top: 22px;
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+#download-button {
+  width: 220px;
+  height: 58px;
+  background-color: black;
+  color: white;
+  border-radius: 48px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+#download-button:hover {
+  opacity: 0.7;
+}
+
+#readmore-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 58px;
+  background-color: white;
+  color: black;
+  border-radius: 48px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+#about {
+  max-width: none;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#top-shape {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#bottom-shape {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+}
+
+#skills {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+#readmore-button {
+  text-decoration: none;
+}
+
+.about-main {
+  display: flex;
+  gap: 300px;
+}
+
+.escrita-about {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.escrita-about h1 {
+  font-size: 62px;
+  text-align: center;
+}
+
+.escrita-about p {
+  font-size: 42px;
+  width: 800px;
+  text-align: center;
+}
+
+#imgVargas {
+  transition: 0.5s;
+}
+
+#imgVargas:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  width: 100%;
+  align-items: center;
+}
+
+.skills {
+  margin-bottom: 80px;
+}
+
+.skills h2,
+.projects h2 {
+  font-size: 68px;
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin: 10px 0;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.bar-inner {
+  height: 100%;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.projects a {
+  display: block;
+  margin: 10px 0;
+  color: #000;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+#contact {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer h1 {
+  font-size: 48px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vh;
+}
+
+.icons img {
+  transition: 1s;
+  width: 100px;
+}
+
+.icons img:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 780px) {
+  .main-title h1 {
+    font-size: 60px !important;
+  }
+  .main-title p {
+    font-size: 16px !important;
+  }
+  .buttons-home button {
+    width: 60% !important;
+    padding-inline: 22px;
+    font-size: 16px !important;
+  }
   .buttons-home {
-    padding-top: 22px;
-    display: flex;
+    flex-direction: column;
+  }
+  #readmore-button {
+    display: none;
+  }
+  .header-home {
+    width: 100vw;
+  }
+  .header-home a > p {
+    font-size: 14px;
+  }
+  .header-home img {
+    width: 116px;
+    padding-left: 15px;
+  }
+  .options-home {
+    padding-right: 15px;
     gap: 12px;
   }
 
-  button {
-    outline: none;
-    border: none;
-  }
-
-  #download-button {
-    width: 220px;
-    height: 58px;
-    background-color: black;
-    color: white;
-    border-radius: 48px;
-    font-size: 18px;
-    font-family: "Montserrat";
-    transition: 200ms ease-in-out;
-    cursor: pointer;
-  }
-
-  #download-button:hover {
-    opacity: 0.7;
-  }
-
-  #readmore-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
-    height: 58px;
-    background-color: white;
-    color: black;
-    border-radius: 48px;
-    font-size: 18px;
-    font-family: "Montserrat";
-    transition: 200ms ease-in-out;
-    cursor: pointer;
-  }
-
-  #about {
-    max-width: none;
-    width: 100%;
-    min-height: 100vh;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-
-  #top-shape {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  #bottom-shape {
-    width: 100%;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-  }
-
-  #skills {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-  }
-
-  #readmore-button {
-    text-decoration: none;
-  }
-
-  .about-main {
-    display: flex;
-    gap: 300px;
+  #imgVargas {
+    display: none;
   }
 
   .escrita-about {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
-  }
-
-  .escrita-about h1 {
-    font-size: 62px;
-    text-align: center;
-  }
-
-  .escrita-about p {
-    font-size: 42px;
-    width: 800px;
-    text-align: center;
-  }
-
-  #imgVargas {
-    transition: 0.5s;
-  }
-
-  #imgVargas:hover {
-    transform: scale(1.1);
-  }
- 
-  .container {
-    width: 100%;
     align-items: center;
+    justify-content: center;
+  }
+  .escrita-about p {
+    width: 300px;
+    text-align: center;
+    font-size: 22px;
+    word-break: keep-all;
+  }
+  .icons > a > img {
+    width: 70px;
   }
 
-  .skills {
-    margin-bottom: 80px;
-  }
-
-  .skills h2, .projects h2 {
-    font-size: 68px;
-    margin-bottom: 30px;
-  }
-
-  .skill {
-    margin: 10px 0;
+  .skills h2,
+  .projects h2 {
+    font-size: 40px;
   }
 
   .skill-name {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 18px;
   }
-
-  .bar {
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 5px;
-  }
-
-  .bar-inner {
-    height: 100%;
-    background-color: #000;
-    border-radius: 5px;
-  }
-
   .projects a {
     display: block;
     margin: 10px 0;
     color: #000;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 20px;
   }
-
-  .projects a:hover {
-    text-decoration: underline;
-  }
-
-  #contact {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer {
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer h1 {
-    font-size: 48px;
-  }
-
-  .icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 40vh;
-}
-
-.icons img {
-    transition: 1s;
-    width: 100px;
-}
-
-  .icons img:hover {
-    transform: scale(1.15);
-  }
-
-  @media (max-width: 780px) {
-
-    .main-title h1{
-        font-size: 60px !important;
-    }
-    .main-title p {
-        font-size: 16px !important;
-    }
-    .buttons-home button {
-        width: 60% !important;
-        padding-inline: 22px;
-        font-size: 16px !important;
-    }
-    .buttons-home {
-        flex-direction: column;
-    }
-    #readmore-button {
-        display: none;
-    }
-    .header-home {
-        width: 100vw;
-    }
-    .header-home a > p {
-        font-size: 14px;
-    }
-    .header-home img {
-        width: 116px;       
-        padding-left: 15px; 
-    }
-    .options-home {
-        padding-right: 15px;
-        gap: 12px;
-    }
-
-    #imgVargas {
-        display: none;
-    }
-
-    .escrita-about {
-        align-items: center;
-        justify-content: center
-
-    }
-    .escrita-about p {
-        width: 300px;
-        text-align: center;
-        font-size: 22px;
-        word-break: keep-all;
-    }
-    .icons > a > img {
-        width: 70px;
-    }
 }
