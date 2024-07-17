@@ -219,14 +219,6 @@ button {
   text-align: center;
 }
 
-#imgVargas {
-  transition: 0.5s;
-}
-
-#imgVargas:hover {
-  transform: scale(1.1);
-}
-
 .container {
   width: 100%;
   align-items: center;
@@ -303,7 +295,12 @@ button {
 }
 
 .icons img {
+  transition: 1s;
   width: 100px;
+}
+
+.icons img:hover {
+  transform: scale(1.15);
 }
 
 @media (max-width: 780px) {
